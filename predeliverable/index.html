@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Load Balancer Design - Anay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <img src="image.png" alt="Logo" class="logo">
+    <h1>Load Balancer Simulation Design</h1>
+    <p class="subtitle">CSCE 412 Project 3</p>
+</header>
+
+<main>
+    <section class="diagram">
+        <h2>System Flow Diagram</h2>
+        <img src="diagram.png" alt="Load Balancer Flow Diagram">
+    </section>
+
+    <section class="description">
+        <h2>System Description</h2>
+        <p>
+            This project simulates a company’s load balancing system. 
+            Requests are generated with random IP addresses, processing times, 
+            and job types. Each request enters a queue managed by the load balancer.
+        </p>
+
+        <p>
+            The load balancer assigns requests to available web servers. 
+            Each server processes one request at a time and then asks for another.
+        </p>
+
+        <p>
+            The system dynamically adjusts the number of servers to maintain 
+            an optimal queue size. If the queue grows too large, a server is added. 
+            If the queue becomes too small, a server is removed.
+        </p>
+
+        <p>
+            An IP blocker is also included to simulate a firewall, preventing 
+            requests from restricted IP ranges from entering the system.
+        </p>
+    </section>
+</main>
+
+</body>
+</html>
