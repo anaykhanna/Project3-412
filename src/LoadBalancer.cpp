@@ -18,6 +18,7 @@ LoadBalancer::LoadBalancer(int numServers, int cycles)
     }
 
     firewall.blockRange(0xC0A80000, 0xC0A8FFFF);
+    firewall.blockRange(0x0A000000, 0x0AFFFFFF); 
 
 }
 
@@ -46,7 +47,11 @@ void LoadBalancer::run() {
 
             Request r;
             r.id = nextId++;
-            r.ip_in = generateRandomIP();
+            if (rand() % 100 < 20) {
+                r.ip_in = 0x0A000000 + (rand() % 0x00FFFFFF);
+            } else {
+                r.ip_in = generateRandomIP();
+            }           
             r.ip_out = generateRandomIP();
             r.duration = generateRandomDuration(3, 8);
             r.jobType = generateRandomJobType();

@@ -23,10 +23,10 @@
  */
 class WebServer {
 private:
-    int id;                               ///< Unique identifier for the server
-    bool busy;                            ///< True if server is processing a request
-    int remainingTime;                    ///< Remaining clock cycles to finish request
-    std::optional<Request> currentRequest;///< Currently assigned request
+    int id;                               
+    bool busy;                            
+    int remainingTime;                    
+    std::optional<Request> currentRequest;
 
 public:
 

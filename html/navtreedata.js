@@ -25,6 +25,9 @@
 var NAVTREE =
 [
   [ "Load Balancer Simulation", "index.html", [
+    [ "Introduction", "index.html#intro", null ],
+    [ "Features", "index.html#features", null ],
+    [ "Design Overview", "index.html#design", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['webserver_0',['WebServer',['../class_web_server.html',1,'WebServer'],['../class_web_server.html#a5044757cd8574d3f62a7eec5d51fb00f',1,'WebServer::WebServer()']]],
-  ['webserver_2eh_1',['WebServer.h',['../_web_server_8h.html',1,'']]]
+  ['tick_0',['tick',['../class_web_server.html#aa70cfd8749f4aee55c60e09a5f9211f7',1,'WebServer']]],
+  ['tryfinish_1',['tryFinish',['../class_web_server.html#a011f9678aefbeaff9565efc989182de5',1,'WebServer']]]
 ];

@@ -22,7 +22,6 @@
 class Firewall {
 private:
     std::vector<std::pair<uint32_t, uint32_t>> blockedRanges;
-    ///< List of blocked IP ranges (start, end)
 
 public:
 

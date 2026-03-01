@@ -22,9 +22,9 @@
  */
 struct Request {
 
-    uint64_t id;        ///< Unique request ID for logging and tracking
-    uint32_t ip_in;     ///< Incoming (source) IP address
-    uint32_t ip_out;    ///< Outgoing (destination) IP address
-    int duration;       ///< Processing time required (clock cycles)
-    char jobType;       ///< Job type: 'P' (Processing) or 'S' (Streaming)
+    uint64_t id;        
+    uint32_t ip_in;     
+    uint32_t ip_out;    
+    int duration;       
+    char jobType;       
 };

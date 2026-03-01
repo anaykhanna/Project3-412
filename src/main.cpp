@@ -34,13 +34,11 @@ int main(int argc, char* argv[]) {
     int numServers;
     int totalCycles;
 
-    // Option 1: Command-line arguments
     if (argc == 3) {
         numServers = std::atoi(argv[1]);
         totalCycles = std::atoi(argv[2]);
     }
     else {
-        // Option 2: Interactive input
         std::cout << "Enter number of servers: ";
         std::cin >> numServers;
 
@@ -55,7 +53,11 @@ int main(int argc, char* argv[]) {
     for (int i = 1; i <= numServers * 100; i++) {
         Request r;
         r.id = i;
-        r.ip_in = generateRandomIP();
+        if (rand() % 100 < 20) {
+            r.ip_in = 0x0A000001 + rand() % 1000;  
+        } else {
+            r.ip_in = generateRandomIP();
+        }       
         r.ip_out = generateRandomIP();
         r.duration = generateRandomDuration(5, 20);
         r.jobType = generateRandomJobType();
